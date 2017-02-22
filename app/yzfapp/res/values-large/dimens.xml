@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="slidingmenu_offset">300.0dip</dimen>
+    <dimen name="menu_spot_margin">25.0dip</dimen>
+</resources>

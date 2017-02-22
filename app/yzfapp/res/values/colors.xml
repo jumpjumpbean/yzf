@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>  
+
+    <color name="fbutton_default_color">#3eadeb</color>
+    <color name="fbutton_default_shadow_color">#ff3493c8</color>
+    <color name="fbutton_color_turquoise">#1abc9c</color>
+    <color name="fbutton_color_green_sea">#16a085</color>
+    <color name="fbutton_color_emerald">#2ecc71</color>
+    <color name="fbutton_color_nephritis">#27ae60</color>
+    <color name="fbutton_color_peter_river">#3498db</color>
+    <color name="fbutton_color_belize_hole">#2980b9</color>
+    <color name="fbutton_color_amethyst">#9b59b6</color>
+    <color name="fbutton_color_wisteria">#8e44ad</color>
+    <color name="fbutton_color_wet_asphalt">#34495e</color>
+    <color name="fbutton_color_midnight_blue">#2c3e50</color>
+    <color name="fbutton_color_sun_flower">#f1c40f</color>
+    <color name="fbutton_color_orange">#f39c12</color>
+    <color name="fbutton_color_carrot">#e67e22</color>
+    <color name="fbutton_color_pumpkin">#d35400</color>
+    <color name="fbutton_color_alizarin">#e74c3c</color>
+    <color name="fbutton_color_pomegranate">#c0392b</color>
+    <color name="fbutton_color_clouds">#ecf0f1</color>
+    <color name="fbutton_color_silver">#bdc3c7</color>
+    <color name="fbutton_color_concrete">#95a5a6</color>
+    <color name="fbutton_color_asbestos">#7f8c8d</color>
+    <color name="fbutton_color_transparent">@android:color/transparent</color>
+    
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="Translucent">#00000000</color>
+    <color name="TranslucentWhite">#aaffffff</color>
+    <color name="spb_default_color">#ff33b5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="nav_bg">#ff0099cc</color>
+    <color name="main_act_title_bg">#ffff6a06</color>
+    
+    <color name="common_button_pressed">#fff06a06</color>
+	<color name="editextbkg">#00112233</color>
+	<color name="editexthintbkg">#ff999999</color>
+	<color name="desctext">#ff858585</color>
+	<color name="darkcolor">#00000000</color>
+	<color name="progress_delay">#ffffb4b4</color>
+	<color name="progress_normal">#ffb4ffb4</color>
+    <color name="progress_white">#ffffffff</color>
+    <color name="progress_track_normal">#ff231815</color>
+    <color name="progress_track_unused">#ff898989</color>
+    <color name="progress_red">#ffff0000</color>
+    <color name="progress_transparent">#00000000</color>
+    <color name="progress_font_gray">#ff888888</color>
+    <color name="progress_empty">#00ffffff</color>
+    <color name="progress_blue_gray">#ffefefef</color>
+    <color name="progress_black">#ff000000</color>    
+</resources>

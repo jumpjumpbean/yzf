@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	android:orientation="vertical" 
+	android:id="@+id/rl_fopti_frame" 
+	android:focusable="true" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:minHeight="60.0dip"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<RelativeLayout 
+		android:id="@+id/rl_fopti_trace_item" 
+		android:paddingTop="@dimen/fopt_padding_top" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:minHeight="60.0dip" 
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="@dimen/fopti_margin_left"
+		android:layout_marginBottom="10.0dip">
+		
+		<TextView
+		    android:id="@+id/tv_fopti_phase_name" 
+			android:textSize="16.0sp" 
+			android:textColor="@color/progress_track_unused" 
+			android:textColorLink="@color/progress_red" 
+			android:autoLink="all" 
+			android:paddingRight="@dimen/fopt_padding_right" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" />
+			
+		<TextView
+		    android:id="@+id/tv_fopti_plan_date" 
+			android:textSize="13.0sp" 
+			android:textColor="@color/progress_track_unused"  
+			android:paddingRight="@dimen/fopt_padding_right" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_below="@id/tv_fopti_phase_name" />
+
+		<TextView
+		    android:id="@+id/tv_fopti_actual_date" 
+			android:textSize="13.0sp" 
+			android:textColor="@color/progress_track_unused"  
+			android:paddingRight="@dimen/fopt_padding_right" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_below="@id/tv_fopti_plan_date"
+			android:visibility="gone" />		
+
+		<TextView
+		    android:id="@+id/tv_fopti_comments" 
+			android:textSize="13.0sp" 
+			android:textColor="@color/progress_track_unused"  
+			android:paddingRight="@dimen/fopt_padding_right"  
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_below="@id/tv_fopti_actual_date"
+			android:visibility="gone" />
+							
+		<ImageView 
+			android:id="@+id/iv_fopti_split_line" 
+			android:background="@drawable/phase_trace_split_line" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="2.0dip"
+			android:layout_alignParentBottom="true"
+			android:contentDescription="@string/image_null" />
+		
+	</RelativeLayout>
+	
+	<RelativeLayout 
+		android:id="@+id/rl_fopti_trace_track" 
+		android:layout_width="@dimen/fopti_width" 
+		android:layout_height="fill_parent"
+		android:minHeight="60.0dip" 
+		android:layout_alignParentLeft="true">
+		
+		<View 
+			android:id="@+id/v_fopti_track_line1" 
+			android:layout_marginBottom="@dimen/fopti_margin_bottom" 
+			android:layout_above="@+id/iv_fopti_setpoint" 
+			android:layout_centerHorizontal="true" 
+			style="@style/phase_trace_line_vertical" />
+			
+		<ImageView 
+			android:id="@id/iv_fopti_setpoint" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="@dimen/fopti_margin_top" 
+			android:src="@drawable/phase_trace_track_point" 
+			android:layout_centerHorizontal="true"
+			android:contentDescription="@string/image_null" />
+			
+		<View 
+			android:id="@+id/v_fopti_track_line2" 
+			android:layout_marginTop="@dimen/fopti_line_margin_top" 
+			android:layout_below="@id/iv_fopti_setpoint" 
+			android:layout_centerHorizontal="true" 
+			style="@style/phase_trace_line_vertical" />
+			
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menu_titles">
+        <item>订单</item>
+        <item>待办事项</item>
+        <item>客户服务</item>
+    </string-array>
+
+    <string-array name="decoration_phase">
+        <item>工程验收</item>
+        <item>工程预验收</item>
+        <item>保洁</item>
+        <item>乳胶漆</item>
+        <item>木制作油漆</item>
+        <item>木工</item>
+        <item>瓦工</item>
+        <item>防水</item>
+        <item>水电</item>
+        <item>拆改项</item>
+        <item>蓝钻保护</item>     
+    </string-array>
+    
+    <string-array name="decoration_step">
+        <item>客户验收</item>
+        <item>管理员审核</item>
+        <item>质检验收</item>
+        <item>施工结束，监理审核</item>
+        <item>开始施工</item>
+        <item>客户验收</item>
+        <item>管理员审核</item>
+        <item>等待质检验收</item>
+        <item>监理审核通过</item>
+        <item>材料进场结束</item>     
+    </string-array>
+    
+</resources>

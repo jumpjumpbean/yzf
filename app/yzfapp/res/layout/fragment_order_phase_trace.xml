@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" >
+    
+    <!--  
+	<RelativeLayout 
+		android:id="@+id/rl_order_phase_trace_title" 
+		android:layout_width="fill_parent" 
+		android:layout_height="@dimens/rl_order_phase_trace_title_height">
+		
+		<ImageView 
+			android:id="@+id/iv_order_phase_trace_title_bg" 
+			android:background="@drawable/logistics_title_bg" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:contentDescription="image" />
+			
+		<TextView
+		    android:id="@+id/tv_order_phase_trace_title_text" 
+			android:textSize="15.0sp"
+			android:textColor="@color/logistics_white" 
+			android:layout_gravity="center_vertical" 
+			android:padding="10.0dip" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:singleLine="true" 
+			android:layout_centerVertical="true" />
+			
+	</RelativeLayout>
+	-->
+	
+	<ScrollView 
+		android:id="@+id/sv_fopt_scroll_container" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:layout_marginTop="@dimen/sv_fopt_scroll_container_margin_top" 
+		android:fadeScrollbars="true">
+		
+		<LinearLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+			
+			<RelativeLayout 
+				android:paddingLeft="@dimen/sv_fopt_scroll_padding_left" 
+				android:paddingRight="@dimen/fopt_padding_right" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content">
+				
+				<RelativeLayout 
+					android:id="@+id/rl_fopt_basic_info" 
+					android:background="@drawable/phase_trace_list_bg_top" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content">
+										
+					<TextView 
+						android:id="@+id/tv_fopt_order_num" 
+						android:paddingLeft="@dimen/sv_fopt_scroll_padding_left" 
+						android:paddingTop="@dimen/fopt_padding_top" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:text="@string/fopt_order_number"
+						android:textSize="14.0sp" />
+						
+					<TextView 
+						android:id="@+id/tv_fopt_order_num_content" 
+						android:paddingTop="@dimen/fopt_padding_top" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:layout_toRightOf="@id/tv_fopt_order_num" 
+						android:layout_alignBottom="@id/tv_fopt_order_num" 
+						android:textSize="14.0sp" />
+
+					<TextView 
+						android:id="@+id/tv_fopt_customer_name" 
+						android:paddingLeft="@dimen/sv_fopt_scroll_padding_left" 
+						android:paddingTop="@dimen/fopt_padding_top" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:text="@string/fopt_customer_name"
+						android:textSize="14.0sp"
+						android:layout_below="@id/tv_fopt_order_num" />
+						
+					<TextView 
+						android:id="@+id/tv_fopt_customer_name_content" 
+						android:paddingTop="@dimen/fopt_padding_top" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:layout_toRightOf="@id/tv_fopt_customer_name" 
+						android:layout_alignBottom="@id/tv_fopt_customer_name" 
+						android:textSize="14.0sp" />
+																
+					<ImageView 
+						android:id="@+id/iv_fopt_position_line" 
+						android:background="@drawable/phase_trace_split_shadow" 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" 
+						android:layout_marginTop="@dimen/sv_fopt_scroll_margin_top" 
+						android:layout_below="@id/tv_fopt_customer_name" 
+						android:layout_alignParentBottom="true"
+						android:contentDescription="@string/image_null" />
+				</RelativeLayout>
+				
+				<RelativeLayout 
+					android:id="@+id/rl_fopt_trace_view" 
+					android:paddingBottom="@dimen/sv_fopt_scroll_padding_bottom" 
+					android:clickable="true" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" 
+					android:layout_below="@id/rl_fopt_basic_info">
+					
+					<LinearLayout
+					    android:id="@+id/ll_fopt_trace_list"
+						android:orientation="vertical" 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" />
+				</RelativeLayout>
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

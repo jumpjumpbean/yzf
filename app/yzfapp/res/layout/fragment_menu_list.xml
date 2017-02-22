@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	android:orientation="vertical" 
+	android:id="@+id/rl_ml_list" 
+	android:layout_width="50.0dip" 
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<ImageView 
+		android:id="@+id/iv_ml_back_image" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:src="@drawable/welcome_pages_blured" 
+		android:scaleType="centerCrop" />
+		
+	<ImageView 
+		android:id="@+id/iv_ml_menu_image"
+		android:layout_width="80.0dip" 
+		android:layout_height="80.0dip" 
+		android:layout_marginTop="20.0dip" 
+		android:layout_centerHorizontal="true" />
+
+	<!-- 		
+	<TextView
+	    android:id="@id/menuTextView"  
+		android:textSize="14.0sp" 
+		android:textColor="@color/white" 
+		android:gravity="center" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_marginTop="3.0dip" 
+		android:text="皮蛋" 
+		android:layout_below="@id/menuImageView" />
+	 -->
+	 	
+	<ListView 
+		android:id="@+id/lv_ml_list_menu" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_marginTop="18.0dip" 
+		android:cacheColorHint="#00000000" 
+		android:divider="@null" 
+		android:layout_below="@id/iv_ml_menu_image" />
+		
+	<TextView 
+	    android:id="@+id/tv_ml_menu_version"
+		android:textSize="14.0sp" 
+		android:textColor="@color/white" 		 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_marginLeft="20.0dip" 
+		android:layout_marginBottom="10.0dip" 
+		android:text="版本：1.0.0" 
+		android:layout_alignParentBottom="true" />
+</RelativeLayout>

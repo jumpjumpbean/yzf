@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+	
+    <include layout="@layout/action_bar" />
+
+    <TextView 
+        android:id="@+id/tv_aiu_no_data" 
+        android:textSize="15.0sp" 
+        android:textColor="@color/black" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="6.0dip" 
+        android:layout_marginTop="2.0dip" 
+        android:singleLine="true"
+        android:layout_below="@id/rl_ab_top"
+        android:visibility="gone" />
+    
+	<GridView
+	    android:id="@+id/gv_aiu_image_upload"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="5.0dip"
+	    android:horizontalSpacing="5.0dip"
+	    android:numColumns="3"
+	    android:verticalSpacing="5.0dip"
+	    android:layout_below="@id/tv_aiu_no_data"
+	    android:layout_above="@+id/ll_aiu_button_group" />
+		
+	<LinearLayout
+	    android:id="@id/ll_aiu_button_group"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true" >
+	
+		<com.yzfsys.app.widget.FButton
+		    android:id="@+id/btn_aiu_upload"
+		    android:layout_width="0dp"
+		    android:layout_height="50.0dip"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="10.0dip"
+		    android:layout_marginRight="5.0dip"
+		    android:layout_marginTop="10.0dip"
+		    android:layout_marginBottom="10.0dip"
+		    android:textColor="@android:color/white"
+		    fbutton:shadowEnabled="true"
+		    fbutton:buttonColor="@color/fbutton_default_color"
+		    android:text="@string/button_aiu_upload"
+		    android:layout_gravity="right|top" />	
+
+		<com.yzfsys.app.widget.FButton
+		    android:id="@+id/btn_aiu_submit"
+		    android:layout_width="0dp"
+		    android:layout_height="50.0dip"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="5.0dip"
+		    android:layout_marginRight="10.0dip"
+		    android:layout_marginTop="10.0dip"
+		    android:layout_marginBottom="10.0dip"
+		    android:textColor="@android:color/white"
+		    fbutton:shadowEnabled="true"
+		    fbutton:buttonColor="@color/fbutton_color_emerald"
+		    android:text="@string/button_aiu_request"
+		    android:layout_gravity="right|top" />			
+			
+	</LinearLayout>	
+	
+</RelativeLayout>
